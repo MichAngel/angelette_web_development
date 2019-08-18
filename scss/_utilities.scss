@@ -1,0 +1,71 @@
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 2rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 2rem 0;
+}
+.btn- {
+  &light {
+    background: $bg-primary;
+    color: $secondary-color;
+  }
+  &dark {
+    background: $bg-dark;
+    color: $light-color;
+  }
+}
+
+.border-right {
+  border-right: 1px solid $main-color;
+}
+.border-left {
+  border-left: 1px solid $main-color;
+}
+.border-top {
+  border-top: 1px solid $main-color;
+}
+.border-bottom {
+  border-bottom: 1px solid $main-color;
+}
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-self: center;
+}
+
+#developer-projects {
+  display: flex;
+
+  img {
+    width: 50%;
+  }
+
+}

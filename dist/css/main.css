@@ -1,0 +1,216 @@
+.container {
+  display: flex;
+  justify-content: center;
+  text-align: center; }
+
+.container2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column; }
+
+.py-1 {
+  padding: 1rem 0; }
+
+.py-2 {
+  padding: 1.5rem 0; }
+
+.py-3 {
+  padding: 2rem 0; }
+
+.my-1 {
+  margin: 1rem 0; }
+
+.my-2 {
+  margin: 1.5rem 0; }
+
+.my-3 {
+  margin: 2rem 0; }
+
+.btn-light {
+  background: #c0c0c0;
+  color: #4d9ad4; }
+
+.btn-dark {
+  background: #767676;
+  color: #00e7ff; }
+
+.border-right {
+  border-right: 1px solid #13133e; }
+
+.border-left {
+  border-left: 1px solid #13133e; }
+
+.border-top {
+  border-top: 1px solid #13133e; }
+
+.border-bottom {
+  border-bottom: 1px solid #13133e; }
+
+.text-center {
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  justify-self: center; }
+
+#developer-projects {
+  display: flex; }
+  #developer-projects img {
+    width: 50%; }
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none; }
+
+#logo {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  z-index: 1; }
+
+#main-nav {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  background: #c0c0c0; }
+  #main-nav ul {
+    display: flex; }
+  #main-nav li {
+    list-style: none;
+    padding-right: .5rem;
+    font-size: 1.5rem; }
+  #main-nav a {
+    text-decoration: none; }
+    #main-nav a:hover {
+      color: #4d9ad4; }
+
+#hero-img {
+  display: block;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden; }
+
+#intro .content-left {
+  flex: 1; }
+  #intro .content-left h1 {
+    line-height: 4rem;
+    font-size: 3rem;
+    height: 13rem;
+    color: #4d9ad4; }
+  #intro .content-left p {
+    margin: 1rem; }
+
+#intro .content-right {
+  flex: 1; }
+  #intro .content-right h1 {
+    line-height: 4rem;
+    font-size: 3rem;
+    height: 13rem; }
+  #intro .content-right p {
+    color: #4d9ad4;
+    margin: 1rem; }
+
+#services-main h1 {
+  padding: 1rem;
+  margin-right: 1rem;
+  line-height: 3rem; }
+
+#services-main p {
+  margin: 1rem;
+  padding: 1rem; }
+
+#services-offers {
+  display: flex;
+  justify-content: space-around; }
+  #services-offers .services {
+    list-style: none;
+    border-top: lightgrey 1px dotted;
+    padding-bottom: 1rem; }
+    #services-offers .services:nth-child(even) {
+      background: #f2f0f0; }
+
+#developer .developer-container {
+  border-bottom: 1px solid #13133e; }
+  #developer .developer-container:first-child {
+    margin-top: 1rem; }
+  #developer .developer-container:nth-child(even) {
+    background: #f2f0f0; }
+  #developer .developer-container:last-child {
+    border: none; }
+  #developer .developer-container img {
+    height: 100%;
+    width: 75px;
+    flex: 1; }
+  #developer .developer-container h2 {
+    flex: 1;
+    padding: 1rem; }
+  #developer .developer-container p {
+    flex: 1;
+    padding: 1rem; }
+
+#submit-btn {
+  width: 60%;
+  height: 1.5rem; }
+  #submit-btn:hover {
+    background: #c0c0c0;
+    color: #13133e; }
+
+.text-fields {
+  display: flex;
+  flex-direction: column; }
+  .text-fields input {
+    display: block;
+    width: 60%;
+    margin-bottom: .5rem; }
+  .text-fields textarea {
+    height: 10rem;
+    width: 60%; }
+
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  background: #c0c0c0;
+  height: 5.5rem; }
+  #main-footer ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none; }
+    #main-footer ul li {
+      margin-right: 0.5rem; }
+      #main-footer ul li:hover {
+        color: #4d9ad4; }
+
+@media only screen and (max-device-width: 1024px) {
+  #hero-img {
+    height: 60vh; }
+  #main-nav img {
+    display: none; }
+  #developer img {
+    display: none; } }
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  #hero-img {
+    display: none; }
+  #main-nav {
+    height: 9rem; }
+    #main-nav ul {
+      display: block;
+      font-size: .5rem;
+      line-height: 1.5rem; }
+    #main-nav img {
+      display: none; }
+  #developer img {
+    display: none; }
+  #intro {
+    display: block; }
+  #services-main .container {
+    display: flex;
+    flex-direction: column; }
+  #services-offers {
+    display: block; } }

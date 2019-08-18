@@ -1,0 +1,242 @@
+@import "config";
+@import "utilities";
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  list-style: none;
+}
+
+#logo {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  margin-left: 1rem;
+  margin-top: 1rem;
+  z-index: 1;
+}
+
+#main-nav {
+  display: flex;
+  height: 5rem;
+  justify-content: space-between;
+  background: $bg-primary;
+  ul {
+    display: flex;
+  }
+  li {
+    list-style: none;
+    padding-right: .5rem;
+    font-size: 1.5rem;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}
+
+// Section 1: Hero Img
+
+#hero-img {
+  display: block;
+  height: 90vh;
+  width: 100%;
+  overflow: hidden;
+}
+
+// Section 2:
+
+#intro {
+  .content- {
+    &left {
+      flex: 1;
+      h1 {
+        line-height: 4rem;
+        font-size: 3rem;
+        height: 13rem;
+        color: $secondary-color;
+      }
+      p {
+        margin: 1rem;
+      }
+    }
+    &right {
+      flex: 1;
+      h1 {
+        line-height: 4rem;
+        font-size: 3rem;
+        height: 13rem;
+      }
+      p {
+        color: $secondary-color;
+        margin: 1rem;
+      }
+    }
+  }
+}
+
+// Services Section A
+
+#services-main {
+  h1 {
+    padding: 1rem;
+    margin-right: 1rem;
+    line-height: 3rem;
+  }
+  p {
+    margin: 1rem;
+    padding: 1rem;
+  }
+}
+
+#services-offers {
+  display: flex;
+  justify-content: space-around;
+  .services {
+    list-style: none;
+    border-top: lightgrey 1px dotted;
+    padding-bottom: 1rem;
+    &:nth-child(even) {
+      background: $bg-light;
+    }
+  }
+}
+
+// Developers Section A
+
+#developer {
+  .developer-container {
+    border-bottom: 1px solid $main-color;
+    &:first-child {
+      margin-top: 1rem;
+    }
+    &:nth-child(even) {
+      background: $bg-light;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    img {
+      height: 100%;
+      width: 75px;
+      flex: 1;
+    }
+    h2 {
+      flex: 1;
+      padding: 1rem;
+    }
+    p {
+      flex: 1;
+      padding: 1rem;
+    }
+  }
+}
+
+// Projects
+
+
+
+//Contact Us
+
+#submit-btn {
+  width: 60%;
+  height: 1.5rem;
+
+  &:hover {
+    background: $bg-primary;
+    color: $main-color;
+  }
+}
+
+.text-fields {
+display: flex;
+flex-direction: column;
+
+input {
+  display: block;
+  width: 60%;
+  margin-bottom: .5rem;
+
+}
+textarea {
+  height: 10rem;
+  width: 60%;
+}
+
+}
+
+// Footer
+
+#main-footer {
+  display: flex;
+  justify-content: space-around;
+  background: $bg-primary;
+  height: 5.5rem;
+  ul {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    li {
+      margin-right: 0.5rem;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+@media only screen and (max-device-width : 1024px) {
+#hero-img { 
+  height: 60vh;    
+}
+#main-nav {
+  img {
+    display: none;
+  }
+}
+#developer img{
+  display: none;
+}
+}
+
+@media only screen 
+and (min-device-width : 320px) 
+and (max-device-width : 480px) {
+  #hero-img { 
+    display: none;    
+  }
+  #main-nav {
+    height: 9rem;
+    ul {
+      display: block;
+      font-size: .5rem;
+      line-height: 1.5rem;
+    }
+    img {
+      display: none;
+    }
+  }
+  #developer img{
+    display: none;
+  }
+  #intro {
+    display: block;
+  }
+  #services- {
+    &main .container {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &offers {
+      display: block;
+    }
+  }
+}
